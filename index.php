@@ -8,11 +8,11 @@
 <body>
     <div style="width:95% !important;margin:0 auto">
 <?php
-    $json = file_get_contents("repor_file.json");
+    $json = file_get_contents("aws_report.json");
     $data = json_decode($json);
 
     echo '</br>';
-    echo '<h6>Report Name</h4>';
+    echo '<h6>positivo/posiurnas Aws Report</h4>';
     echo '</br>';
     echo "<b>Scan</b> - ".$data->imageScanFindings->imageScanCompletedAt;
     echo "</br>";
